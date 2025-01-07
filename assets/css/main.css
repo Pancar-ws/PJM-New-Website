@@ -1078,6 +1078,13 @@ section,
   margin-bottom: 10px; /* Tambahkan jarak antar item list jika diperlukan */
 }
 
+.img-zoom {
+  transition: transform 0.3s ease; /* Menambahkan transisi untuk efek zoom */
+}
+
+.img-zoom:hover {
+  transform: scale(1.1); /* Mengubah ukuran gambar saat hover */
+}
 /*--------------------------------------------------------------
 # Clients Section
 --------------------------------------------------------------*/
