@@ -927,6 +927,11 @@ section,
   transition: 0.3s;
   border: 2px solid color-mix(in srgb, var(--default-color), transparent 90%);
   background-color: color-mix(in srgb, var(--default-color), transparent 90%);
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  margin-bottom: 10px;
 }
 
 .hero .btn-get-started:hover {
@@ -939,6 +944,7 @@ section,
   margin-left: 25px;
   font-weight: 600;
   color: var(--default-color);
+  margin-bottom: 10px;
 }
 
 .hero .btn-watch-video i {
@@ -1083,7 +1089,12 @@ section,
 }
 
 .img-zoom:hover {
-  transform: scale(1.1); /* Mengubah ukuran gambar saat hover */
+  transform: scale(0.9);
+  /*Mengubahukurangambarsaathover*/:;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
 }
 /*--------------------------------------------------------------
 # Clients Section
@@ -1288,11 +1299,16 @@ section,
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
-.services .service-item {
-  background-color: var(--surface-color);
-  padding: 40px;
-  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
-  height: 100%;
+.service-item {
+  background-color: transparent; /* Menghapus latar belakang putih */
+  padding: 20px; /* Menambahkan padding untuk memberikan ruang di dalam elemen */
+  border-radius: 15px; /* Menambahkan sudut yang membulat */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk efek kedalaman */
+  transition: transform 0.3s; /* Transisi untuk efek hover */
+}
+
+.service-item:hover {
+  transform: translateY(-5px); /* Efek hover untuk mengangkat elemen sedikit */
 }
 
 .services .service-item .icon {
